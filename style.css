@@ -149,7 +149,6 @@ body{
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 120px;
 }
 
 .container nav p{
@@ -201,6 +200,11 @@ body{
     color: #FFF;
 }
 
+.main_li_click{
+    background-color: #000;
+    color: #FFF;
+}
+
 .main_p{
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
@@ -217,9 +221,18 @@ body{
     color: #0BB;
 }
 
-#page1, #page4, #page5{
-    display: none;
-    background: red;
+.top_p{
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 30px;
 }
+
+h4{
+   padding: 40px 0 0px 15px; 
+   font-family: 'Noto Sans TC', sans-serif;
+   font-weight: 700;
+}
+
 
 
