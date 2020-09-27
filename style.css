@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+/* CSS reset end */
+
+html{
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* INDEX */
+
+.index-content{
+    width: 70%;
+    height: 100%;
+    min-height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.index_p{
+    font-family: 'Noto Sans TC', sans-serif;
+    text-indent: 40px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    display: block;
+    width:70%;
+    margin-bottom: 50px;
+    font-weight: 500;
+    /* transition: all 1s; */
+}
+
+/* .index-content input{
+    width: 50px;
+    display: block;
+} */
+
+.index-content a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    /* border: solid 1px;
+    border-radius: 50%; */
+    padding: 10px;
+    transition: all 1s;
+    display: block;
+    padding: 20px 30px 30px 30px;
+}
+
+.index-content a:hover{
+    transform: translateX(5px); 
+    /* color: #333; */
+}
+
+.index_footer{
+    text-indent: 0px;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    bottom: 40px;
+    letter-spacing: .1em;
+}
+
+/* MAIN */
+
+.container{
+    max-width: 900px;
+    margin: 8% auto;
+    /* margin-top: 30px; */
+    /* display: flex;
+    justify-content: space-between; */
+    /* background: #FCC; */
+    height: 100%;
+    height: 2000px;
+    /* position: relative; */
+}
+
+.container nav{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    /* background: #CFC; */
+    position: fixed;
+    top: 120px;
+
+}
+
+.container nav p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 13px;
+    margin-bottom: 35px;
+    font-weight: 900;
+}
+
+.container nav a{
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #000;
+    text-decoration: none;
+    font-size:15px;
+    display: inline;
+    margin-bottom: 20px;
+    letter-spacing: .02em;
+    font-weight: 700;
+    transition: all .5s;
+}
+
+.container a:hover{
+    transform: translateX(2px);
+    /* transition: all 1s; */
+}
+
+.container main{
+    width: 80%;
+    margin-left:180px;
+}
+
+.main_li{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-align: center;
+    border: solid #000 1px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: all .2s;
+}
+
+.main_li:hover{
+    background: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.main_p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 95%;
+    margin: 10px auto;
+}
