@@ -92,14 +92,12 @@ body{
     font-size: 18px;
     line-height: 1.8;
     text-align: justify;
-    display: block;
+    /* display: block; */
+    display: none;
     width:70%;
     margin-bottom: 50px;
     font-weight: 500;
     margin: 0 auto;
-    /* position: relative;
-    left: 0px;
-    right: 0px; */
 }
 
 .index-content a{
@@ -129,7 +127,6 @@ body{
 @media(max-width: 768px){
     
     #index_page{
-        /* position: absolute; */
         top: 0;
         left: 0;
         right: 0;
@@ -139,7 +136,7 @@ body{
     
     .index-content{
         width: 100%;
-        heihgt: 100%;
+        height: 100%;
         margin: 0 auto;
     }
 
@@ -165,6 +162,7 @@ body{
 
 #pc_nav{
     margin-left: 30px;
+    padding-top: 4px;
 }
 
 h2{
@@ -244,6 +242,7 @@ h2{
     }
     #star{
         margin-top: 60px;
+        display: none;
     }
     #page1, #page2, #page3, #page4, #page5{
         margin: 0 30px;
@@ -275,6 +274,7 @@ h2{
 
     #star{
         margin-top: 0px;
+        display: none;
     }
 
     h2{
@@ -296,19 +296,12 @@ h2{
         cursor: pointer;
     }
 
-    #m_nav_all{
-        /* display: none; */
-    }
 
     #m_nav{
         position: fixed;
-        /* margin: auto 0; */
         bottom: 10%;
         left: 50px;
-        /* display: table-cell;
-        vertical-align: middle; */
         width: 90%;
-        /* height: 100%; */
     }
 
     #m_nav_all nav a, #m_nav_all nav p{
@@ -316,7 +309,6 @@ h2{
         text-align: justify;
         padding: 15px 10px 15px 20px;
         margin: 0;
-        /* transform: translateX(-200px); */
         position: relative;
         left: -200px;
     }
@@ -333,7 +325,6 @@ h2{
         left: 0;
         width: 100%;
         height: 100%;
-        /* display: table; */
         display: none;
     }
 
@@ -360,7 +351,6 @@ h2{
         font-size: 22px;
         font-weight: 900;
         color: #333;
-        /* padding-right: 50px; */
     }
 }
 
@@ -373,7 +363,6 @@ h2{
     margin: 0 auto;
     padding: 40px 0;
     text-align: justify;
-    margin-left
 }
 
 .main_p a{
@@ -399,6 +388,7 @@ h2{
     text-align: left;
     padding-left: 10px;
     margin-bottom: 30px;
+    line-height: 1.5;
 }
 
 h4{

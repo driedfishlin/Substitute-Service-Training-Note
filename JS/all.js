@@ -2,6 +2,8 @@
 
     $(document).ready(function(){
 
+        $('.index_p, #star').delay(300).fadeIn(2000);
+
 // 首頁點擊
 
         $('#star').click(function(){
@@ -12,61 +14,91 @@
 
 // nav 點擊事件
 
-        $('#nav_1, #m_nav_1').click(function(){
-            $('#page1').removeClass('display_none');
-            $('#page1').siblings().addClass('display_none');
+        $('#nav_1').click(function(){
+            $('#page1').delay(500).fadeIn(500);
+            $('#page1').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('.main_li').removeClass('main_li_click');
+        });
+        $('#m_nav_1').click(function(){
+            $('#page1').fadeIn(0);
+            $('#page1').siblings().fadeOut(0);
             $('.main_p, #imgdiv').slideUp(0);
             $('.main_li').removeClass('main_li_click');
-
             // close
-            $('#m_nav_all').fadeOut(300);
-            $('#m_nav').animate({marginLeft: '-200px'}, 500);
+            $('#close').fadeOut(300);
+            $('.m_nav_bg').fadeOut(500);
+            $('#m_nav').animate({marginLeft: '-180px'}, 700);
+            $('#menu_button').animate({left: '-3px'}, 700);
         });
-
-        $('#nav_2, #m_nav_2').click(function(){
-            $('#page2').removeClass('display_none');
-            $('#page2').siblings().addClass('display_none');
+        //
+        $('#nav_2').click(function(){
+            $('#page2').delay(500).fadeIn(500);
+            $('#page2').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('.main_li').removeClass('main_li_click');
+        });
+        $('#m_nav_2').click(function(){
+            $('#page2').fadeIn(0);
+            $('#page2').siblings().fadeOut(0);
             $('.main_p, #imgdiv').slideUp(0);
             $('.main_li').removeClass('main_li_click');
-
             // close
-            $('#m_nav_all').fadeOut(300);
-            $('#m_nav').animate({marginLeft: '-200px'}, 500);
+            $('#close').fadeOut(300);
+            $('.m_nav_bg').fadeOut(500);
+            $('#m_nav').animate({marginLeft: '-180px'}, 700);
+            $('#menu_button').animate({left: '-3px'}, 700);
         });
-
-        $('#nav_3, #m_nav_3').click(function(){
-            $('#page3').removeClass('display_none');
-            $('#page3').siblings().addClass('display_none');
+        //
+        $('#nav_3').click(function(){
+            $('#page3').delay(500).fadeIn(500);
+            $('#page3').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('.main_li').removeClass('main_li_click');
+        });
+        $('#m_nav_3').click(function(){
+            $('#page3').fadeIn(0);
+            $('#page3').siblings().fadeOut(0);
             $('.main_p, #imgdiv').slideUp(0);
             $('.main_li').removeClass('main_li_click');
-
             // close
-            $('#m_nav_all').fadeOut(300);
-            $('#m_nav').animate({marginLeft: '-200px'}, 500);
-
+            $('#close').fadeOut(300);
+            $('.m_nav_bg').fadeOut(500);
+            $('#m_nav').animate({marginLeft: '-180px'}, 700);
+            $('#menu_button').animate({left: '-3px'}, 700);
         });
-
-        $('#nav_4, #m_nav_4').click(function(){
-            $('#page4').removeClass('display_none');
-            $('#page4').siblings().addClass('display_none');
+        //
+        $('#nav_4').click(function(){
+            $('#page4').delay(500).fadeIn(500);
+            $('#page4').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('.main_li').removeClass('main_li_click');
+        });
+        $('#m_nav_4').click(function(){
+            $('#page4').fadeIn(0);
+            $('#page4').siblings().fadeOut(0);
             $('.main_p, #imgdiv').slideUp(0);
             $('.main_li').removeClass('main_li_click');
-
             // close
-            $('#m_nav_all').fadeOut(300);
-            $('#m_nav').animate({marginLeft: '-200px'}, 500);            
+            $('#close').fadeOut(300);
+            $('.m_nav_bg').fadeOut(500);
+            $('#m_nav').animate({marginLeft: '-180px'}, 700);
+            $('#menu_button').animate({left: '-3px'}, 700);
         });
-
-        $('#nav_5, #m_nav_5').click(function(){
-            $('#page5').removeClass('display_none');
-            $('#page5').siblings().addClass('display_none');
+        //
+        $('#nav_5').click(function(){
+            $('#page5').delay(500).fadeIn(500);
+            $('#page5').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('.main_li').removeClass('main_li_click');
+        });
+        $('#m_nav_5').click(function(){
+            $('#page5').fadeIn(0);
+            $('#page5').siblings().fadeOut(0);
             $('.main_p, #imgdiv').slideUp(0);
             $('.main_li').removeClass('main_li_click');
-
             // close
-            $('#m_nav_all').fadeOut(300);
-            $('#m_nav').animate({marginLeft: '-200px'}, 500);            
+            $('#close').fadeOut(300);
+            $('.m_nav_bg').fadeOut(500);
+            $('#m_nav').animate({marginLeft: '-180px'}, 700);
+            $('#menu_button').animate({left: '-3px'}, 700);
         });
+        
 
 // <li> 點擊事件
 
@@ -83,14 +115,16 @@
 
         $('#menu_button').click(function(){
             $('.m_nav_bg').fadeOut(0);
-            $('#m_nav_all').delay(0).css('display','initial');
-            $('.m_nav_bg').delay(0).fadeIn(500);
-            $('#m_nav').animate({marginLeft: '200px'}, 500)
+            $('.m_nav_bg, #close').fadeIn(500);
+            $('#m_nav').animate({marginLeft: '180px'}, 700)
+            $(this).delay(200).animate({left: '-50px'}, 700);
         });
 
         $('#close').click(function(){
-            $('#m_nav_all').fadeOut(300);
-            $('#m_nav').animate({marginLeft: '-200px'}, 500);
+            $('#close').fadeOut(300);
+            $('.m_nav_bg').fadeOut(500);
+            $('#m_nav').animate({marginLeft: '-180px'}, 700);
+            $('#menu_button').animate({left: '-3px'}, 700);
         });
 
     });
