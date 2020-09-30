@@ -12,92 +12,52 @@
             $('#index_page').delay(1500).fadeOut(1000);
         });
 
-// nav 點擊事件
+// 函數
 
-        $('#nav_1').click(function(){
-            $('#page1').delay(200).fadeIn(300);
-            $('#page1').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-        });
-        $('#m_nav_1').click(function(){
-            $('#page1').fadeIn(0);
-            $('#page1').siblings().fadeOut(0);
-            $('.main_p, #imgdiv').slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-            // close
-            $('#close').fadeOut(300);
-            $('.m_nav_bg').fadeOut(500);
-            $('#m_nav').animate({marginLeft: '-180px'}, 700);
-            $('#menu_button').animate({left: '-3px'}, 700);
-        });
+        // NAV 點擊事件
+        function navClick(navId, pageId){
+            $(navId).click(function(){
+                $(pageId).delay(200).fadeIn(300);
+                $(pageId).siblings().fadeOut(200);
+                listReset(200);
+            })
+        }
         //
-        $('#nav_2').click(function(){
-            $('#page2').delay(200).fadeIn(300);
-            $('#page2').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
+        function m_navClick(navId, pageId){
+            $(navId).click(function(){
+                $(pageId).fadeIn(0);
+                $(pageId).siblings().fadeOut(0);
+                listReset(0);
+                // close
+                $('#close').fadeOut(300);
+                $('.m_nav_bg').fadeOut(500);
+                $('#m_nav').animate({marginLeft: '-180px'}, 700);
+                $('#menu_button').animate({left: '-3px'}, 700);
+            });
+        }
+
+        // 重設選單樣式
+        function listReset(Time){
+            $('.main_p, #imgdiv').delay(Time).slideUp(0);
             $('.main_li').removeClass('main_li_click');
-        });
-        $('#m_nav_2').click(function(){
-            $('#page2').fadeIn(0);
-            $('#page2').siblings().fadeOut(0);
-            $('.main_p, #imgdiv').slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-            // close
-            $('#close').fadeOut(300);
-            $('.m_nav_bg').fadeOut(500);
-            $('#m_nav').animate({marginLeft: '-180px'}, 700);
-            $('#menu_button').animate({left: '-3px'}, 700);
-        });
-        //
-        $('#nav_3').click(function(){
-            $('#page3').delay(200).fadeIn(300);
-            $('#page3').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-        });
-        $('#m_nav_3').click(function(){
-            $('#page3').fadeIn(0);
-            $('#page3').siblings().fadeOut(0);
-            $('.main_p, #imgdiv').slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-            // close
-            $('#close').fadeOut(300);
-            $('.m_nav_bg').fadeOut(500);
-            $('#m_nav').animate({marginLeft: '-180px'}, 700);
-            $('#menu_button').animate({left: '-3px'}, 700);
-        });
-        //
-        $('#nav_4').click(function(){
-            $('#page4').delay(200).fadeIn(300);
-            $('#page4').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-        });
-        $('#m_nav_4').click(function(){
-            $('#page4').fadeIn(0);
-            $('#page4').siblings().fadeOut(0);
-            $('.main_p, #imgdiv').slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-            // close
-            $('#close').fadeOut(300);
-            $('.m_nav_bg').fadeOut(500);
-            $('#m_nav').animate({marginLeft: '-180px'}, 700);
-            $('#menu_button').animate({left: '-3px'}, 700);
-        });
-        //
-        $('#nav_5').click(function(){
-            $('#page5').delay(200).fadeIn(300);
-            $('#page5').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-        });
-        $('#m_nav_5').click(function(){
-            $('#page5').fadeIn(0);
-            $('#page5').siblings().fadeOut(0);
-            $('.main_p, #imgdiv').slideUp(0);
-            $('.main_li').removeClass('main_li_click');
-            // close
-            $('#close').fadeOut(300);
-            $('.m_nav_bg').fadeOut(500);
-            $('#m_nav').animate({marginLeft: '-180px'}, 700);
-            $('#menu_button').animate({left: '-3px'}, 700);
-        });
+        }
+
+// NAV 點擊換頁
+
+        navClick('#nav_1', '#page1');
+        m_navClick('#m_nav_1', '#page1');
+
+        navClick('#nav_2', '#page2');
+        m_navClick('#m_nav_2', '#page2');
+
+        navClick('#nav_3', '#page3');
+        m_navClick('#m_nav_3', '#page3');
+
+        navClick('#nav_4', '#page4');
+        m_navClick('#m_nav_4', '#page4');
+
+        navClick('#nav_5', '#page5');
+        m_navClick('#m_nav_5', '#page5');
         
 
 // <li> 點擊事件
