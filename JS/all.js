@@ -15,8 +15,8 @@
 // nav 點擊事件
 
         $('#nav_1').click(function(){
-            $('#page1').delay(500).fadeIn(500);
-            $('#page1').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('#page1').delay(200).fadeIn(300);
+            $('#page1').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
             $('.main_li').removeClass('main_li_click');
         });
         $('#m_nav_1').click(function(){
@@ -32,8 +32,8 @@
         });
         //
         $('#nav_2').click(function(){
-            $('#page2').delay(500).fadeIn(500);
-            $('#page2').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('#page2').delay(200).fadeIn(300);
+            $('#page2').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
             $('.main_li').removeClass('main_li_click');
         });
         $('#m_nav_2').click(function(){
@@ -49,8 +49,8 @@
         });
         //
         $('#nav_3').click(function(){
-            $('#page3').delay(500).fadeIn(500);
-            $('#page3').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('#page3').delay(200).fadeIn(300);
+            $('#page3').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
             $('.main_li').removeClass('main_li_click');
         });
         $('#m_nav_3').click(function(){
@@ -66,8 +66,8 @@
         });
         //
         $('#nav_4').click(function(){
-            $('#page4').delay(500).fadeIn(500);
-            $('#page4').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('#page4').delay(200).fadeIn(300);
+            $('#page4').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
             $('.main_li').removeClass('main_li_click');
         });
         $('#m_nav_4').click(function(){
@@ -83,8 +83,8 @@
         });
         //
         $('#nav_5').click(function(){
-            $('#page5').delay(500).fadeIn(500);
-            $('#page5').siblings().fadeOut(500);$('.main_p, #imgdiv').delay(500).slideUp(0);
+            $('#page5').delay(200).fadeIn(300);
+            $('#page5').siblings().fadeOut(200);$('.main_p, #imgdiv').delay(200).slideUp(0);
             $('.main_li').removeClass('main_li_click');
         });
         $('#m_nav_5').click(function(){
@@ -115,15 +115,15 @@
 
         $('#menu_button').click(function(){
             $('.m_nav_bg').fadeOut(0);
-            $('.m_nav_bg, #close').fadeIn(500);
-            $('#m_nav').animate({marginLeft: '180px'}, 700)
+            $('.m_nav_bg, #close').fadeIn(300);
+            $('#m_nav').animate({marginLeft: '180px'}, 500)
             $(this).delay(200).animate({left: '-50px'}, 700);
         });
 
         $('#close').click(function(){
             $('#close').fadeOut(300);
             $('.m_nav_bg').fadeOut(500);
-            $('#m_nav').animate({marginLeft: '-180px'}, 700);
+            $('#m_nav').animate({marginLeft: '-180px'}, 500);
             $('#menu_button').animate({left: '-3px'}, 700);
         });
 
