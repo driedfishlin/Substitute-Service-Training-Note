@@ -63,13 +63,38 @@
 // <li> 點擊事件
 
         $('.main_li').click(function(){
+            // 列表
             $(this).toggleClass('main_li_click').parent().siblings().find('.main_li').removeClass('main_li_click');
+
+            // li 點擊滑動至閱讀位置效果
+
+            // 取得高度值
+            let liPos = $(this).offset().top;
+            let pHeight = $(this).parent().prevAll().find('p[style="display: block;"]').height();
+
+            // 把扣除高度值加上第三頁的圖片高度
+            let imgDis = $('#imgdiv').attr('style').indexOf('block')
+            if(imgDis != (-1)){
+                pHeight += $('#imgdiv').height()
+            }
+            
+            // 判斷上一個點擊元素位置決定套用的函數
+            if(pHeight != undefined){
+                $('html, body').animate({scrollTop: liPos - pHeight - 200}, 500);
+            } else{
+                $('html, body').animate({scrollTop: liPos - 120}, 500);
+            }
+
+            //
+
+            // 內文
             $(this).parent().find('p').slideToggle(500);
             $(this).parent().siblings().find('p').slideUp(500);
-
+            // 圖片
             $(this).parent().find('#imgdiv').fadeToggle(500);
-            $(this).parent().siblings().find('#imgdiv').fadeOut(500);
+            $(this).parent().siblings().find('#imgdiv').fadeOut(100);
         });
+
 
         // 手機目錄按鈕
 
