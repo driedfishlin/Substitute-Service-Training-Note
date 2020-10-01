@@ -14,14 +14,22 @@
 
 // 函數
 
+// let indexOfPage = $(pageId).attr('style').indexOf('none');
+// if(indexOfPage != -1){};
+
         // NAV 點擊事件
+
         function navClick(navId, pageId){
             $(navId).click(function(){
-                $(pageId).delay(200).fadeIn(300);
-                $(pageId).siblings().fadeOut(200);
-                listReset(200);
-            })
-        }
+                let indexOfPage = $(pageId).attr('style').indexOf('none');
+                if(indexOfPage != -1){
+                    $(pageId).delay(200).fadeIn(300);
+                    $(pageId).siblings().fadeOut(200);
+                    listReset(200);
+                };
+            });
+        };
+
         //
         function m_navClick(navId, pageId){
             $(navId).click(function(){
@@ -78,14 +86,14 @@
                 pHeight += $('#imgdiv').height()
             }
             
-            // 判斷上一個點擊元素位置決定套用的函數
-            if(pHeight != undefined){
-                $('html, body').animate({scrollTop: liPos - pHeight - 200}, 500);
-            } else{
-                $('html, body').animate({scrollTop: liPos - 120}, 500);
+            // 判斷上一個點擊元素位置決定套用的函數，因為影響到淡入淡出效果，因此在寬螢幕不啟用
+            if(window.screen.width < 769){
+                if(pHeight != undefined){
+                    $('html, body').animate({scrollTop: liPos - pHeight - 200}, 500);
+                } else{
+                    $('html, body').animate({scrollTop: liPos - 120}, 500);
+                }
             }
-
-            //
 
             // 內文
             $(this).parent().find('p').slideToggle(500);
