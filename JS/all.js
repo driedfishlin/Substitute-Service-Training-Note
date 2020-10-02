@@ -14,18 +14,20 @@
 
 // 函數
 
-// let indexOfPage = $(pageId).attr('style').indexOf('none');
-// if(indexOfPage != -1){};
-
         // NAV 點擊事件
 
         function navClick(navId, pageId){
-            $(navId).click(function(){
+            $(navId).click(function(event){
+                event.preventDefault();
+                
                 let indexOfPage = $(pageId).attr('style').indexOf('none');
                 if(indexOfPage != -1){
+                    $('html, body').delay(200).animate({scrollTop: 0}, 0);
                     $(pageId).delay(200).fadeIn(300);
                     $(pageId).siblings().fadeOut(200);
                     listReset(200);
+                }else{
+                    $('html, body').delay(0).animate({scrollTop: 0}, 200);
                 };
             });
         };
