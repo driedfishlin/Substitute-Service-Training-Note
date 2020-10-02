@@ -231,8 +231,8 @@ h2{
     margin: 20px 0 0 0;
     padding: 15px;
     transition: all .2s .05s;
-    /* transition: color 1s .2s; */
     cursor: pointer;
+    user-select: none;
 }
 
 @media(min-width: 769px){
@@ -249,6 +249,9 @@ h2{
     }
     #page1, #page2, #page3, #page4, #page5{
         margin: 0 30px;
+    }
+    #nav_1, #nav_2, #nav_3, #nav_4, #nav_5{
+        user-select: none;
     }
 }
 .main_li_click{
