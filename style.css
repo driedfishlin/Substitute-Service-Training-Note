@@ -75,6 +75,7 @@ body{
     width: 100%;
     height: 100%;
     top:0;
+    left: 0;
 }
 
 .index-content{
@@ -117,14 +118,7 @@ body{
     transform: translateX(5px);
 }
 
-.index_footer{
-    text-indent: 0px;
-    text-align: center;
-    font-size: 12px;
-    bottom: 40px;
-    letter-spacing: .1em;
-    display: none;
-}
+
 
 
 @media(max-width: 768px){
@@ -132,9 +126,9 @@ body{
     #index_page{
         top: 0;
         left: 0;
-        right: 0;
         width: 100%;
         height: 100%;
+        position: absolute;
     }
     
     .index-content{
@@ -143,15 +137,11 @@ body{
         margin: 0 auto;
     }
 
-    .index_footer{
-        display: inline;
-    }
-
     .index_p{
         font-size: 15px;
         line-height: 1.8;
         width:75%;
-        margin: 50px 50px 10px 50px;
+        margin-bottom: 10px;
     }
 
 }

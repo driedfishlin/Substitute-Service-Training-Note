@@ -10,6 +10,7 @@
             $('#star').animate({marginRight: '10px'}, 150).delay(300).animate({marginLeft:'1000px'}, 1500);
             $('.index-content').delay(500).fadeOut(1000);
             $('#index_page').delay(1500).fadeOut(1000);
+            $('.container').delay(1500).fadeIn(1000);
         });
 
 // 函數
